@@ -13,7 +13,7 @@ function success(position) {
     console.log(long);
     console.log(lat);
 
-    const url = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&" + "lon=" + long + "&appid=9b00f14e85589297f2369ded9c6b8c57";
+    const url = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&" + "lon=" + long + "&appid=9b00f14e85589297f2369ded9c6b8c57";
 
     fetch(url).then((response) => {
         return response.json();
